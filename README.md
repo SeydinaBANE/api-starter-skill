@@ -1,70 +1,63 @@
-# api-starter
+# api-starter-skill
 
-Un skill Claude Code qui génère en quelques secondes une **FastAPI** ou **Flask** REST API prête pour la production.
+Une collection de skills Claude Code pour générer des APIs REST prêtes pour la production.
+
+| Skill | Langage | Frameworks |
+|---|---|---|
+| `/api-starter` | Python | FastAPI, Flask |
+| `/ts-api-starter` | TypeScript | Express, Fastify |
 
 ## Installation
 
 ```bash
-npx skills add <ton-username-github>/api-starter
+npx skills add SeydinaBANE/api-starter-skill
 ```
 
-## Utilisation
+---
 
-Dans n'importe quelle session Claude Code, tape :
+## `/api-starter` — Python
+
+Génère une API REST Python avec FastAPI ou Flask.
+
+### Utilisation
 
 ```
 /api-starter
-```
-
-Claude te demandera le **nom du projet** et le **framework** (FastAPI ou Flask), puis générera toute la structure du projet.
-
-Tu peux aussi passer les arguments directement :
-
-```
 /api-starter mon-projet fastapi
 /api-starter mon-projet flask
 ```
 
-## Ce qui est généré
-
-### FastAPI
+### Structure générée (FastAPI)
 
 ```
 mon-projet/
 ├── app/
-│   ├── __init__.py
 │   ├── main.py
-│   ├── api/
-│   │   └── routes/
-│   │       └── health.py   # GET /health
+│   ├── api/routes/health.py   # GET /health
 │   └── schemas/
-│       └── __init__.py
 ├── tests/
 │   └── test_main.py
 ├── requirements.txt
 ├── Dockerfile
-├── .gitignore
-└── README.md
+└── .gitignore
 ```
 
-### Flask
+### Structure générée (Flask)
 
 ```
 mon-projet/
 ├── app/
-│   ├── __init__.py         # factory create_app()
-│   └── routes/
-│       └── health.py       # GET /health
+│   ├── __init__.py            # create_app()
+│   └── routes/health.py      # GET /health
 ├── tests/
 │   ├── conftest.py
 │   └── test_app.py
 ├── requirements.txt
 ├── Dockerfile
-├── .gitignore
-└── README.md
+└── .gitignore
 ```
 
-## Démarrage rapide après le scaffold
+### Démarrage rapide
 
 ```bash
 cd mon-projet
@@ -72,6 +65,47 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pytest
 ```
+
+---
+
+## `/ts-api-starter` — TypeScript
+
+Génère une API REST TypeScript avec Express ou Fastify.
+
+### Utilisation
+
+```
+/ts-api-starter
+/ts-api-starter mon-projet express
+/ts-api-starter mon-projet fastify
+```
+
+### Structure générée
+
+```
+mon-projet/
+├── src/
+│   ├── index.ts
+│   ├── app.ts
+│   └── routes/health.ts      # GET /health
+├── tests/
+│   └── health.test.ts
+├── package.json
+├── tsconfig.json
+├── Dockerfile
+└── .gitignore
+```
+
+### Démarrage rapide
+
+```bash
+cd mon-projet
+npm install
+npm test
+npm run dev
+```
+
+---
 
 ## Licence
 
