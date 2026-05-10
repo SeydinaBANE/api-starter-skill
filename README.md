@@ -1,5 +1,15 @@
 # api-starter-skill
 
+![GitHub stars](https://img.shields.io/github/stars/SeydinaBANE/api-starter-skill?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/SeydinaBANE/api-starter-skill?style=flat-square)
+![License](https://img.shields.io/github/license/SeydinaBANE/api-starter-skill?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=flat-square&logo=flask&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.19-000000?style=flat-square&logo=express&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-4.27-000000?style=flat-square&logo=fastify&logoColor=white)
+
 Une collection de skills Claude Code pour générer des APIs REST prêtes pour la production.
 
 | Skill | Langage | Frameworks |
